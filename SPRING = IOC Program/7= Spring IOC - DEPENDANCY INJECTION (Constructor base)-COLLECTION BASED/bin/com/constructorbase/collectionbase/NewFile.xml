@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+			
+			<bean id="s" class="com.constructorbase.collectionbase.Shopkeeper">
+			<constructor-arg value= "44"></constructor-arg>
+			<constructor-arg value="D-Mart"></constructor-arg>
+			<constructor-arg >
+			<list>
+			<value>Ice-cream</value> 
+			<value>Sofe</value>
+			<value>gamming</value> 
+			</list>
+			</constructor-arg>
+			
+			<constructor-arg>
+			<set>		
+			<value>Belly</value>
+			<value>Natraj</value>
+			<value>Stylo</value>
+			</set>	
+			</constructor-arg>
+			
+			<constructor-arg>
+			<map>
+			<entry key="1" value="Nager"></entry>
+			<entry key="2" value="Jamkhed"></entry>
+			<entry key="3" value="Rajuri"></entry>
+			
+			</map>
+			
+			</constructor-arg>
+			</bean>
+			</beans>

@@ -1,0 +1,20 @@
+package com.collectionbase;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Product {
+	
+	
+	private int id;
+	
+	private List<String>  Pname;
+	
+	private Set<String> electronic;
+	
+	private Map<Integer, String> map;
+	
+	
+
+}

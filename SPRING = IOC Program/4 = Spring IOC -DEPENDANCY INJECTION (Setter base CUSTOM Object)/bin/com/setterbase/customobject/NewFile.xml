@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="e" class="com.setterbase.customobject.Employee">
+		<property name="eid" value="10"></property>
+		<property name="ename" value="mauli"></property>
+		<property name="compeany" ref="c"></property>
+
+
+	</bean>
+
+	<bean id="c" class="com.setterbase.customobject.Compaeny">
+		<property name="cid" value="20"></property>
+		<property name="cname" value="TCS"></property>
+		<property name="caddress" value="Hinjwad"></property>
+
+
+
+
+	</bean>
+
+</beans>

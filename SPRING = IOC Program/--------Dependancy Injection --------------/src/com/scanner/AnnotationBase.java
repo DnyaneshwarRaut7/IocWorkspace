@@ -1,0 +1,61 @@
+package com.scanner;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AnnotationBase {
+
+	@Bean
+	public Student s() {
+		Student s = new Student();
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your Student Id");
+		s.setId(sc.nextInt());
+
+		System.out.println("Enter Your Student Name:-");
+		s.setName(sc.next());
+
+		System.out.println("Enter Your Student Address:-");
+		s.setAddress(sc.next());
+
+		System.out.println("Enter your Student City :-");
+		s.setCity(sc.next());
+
+		return s;
+	}
+
+	@Bean
+	public List<Student> slist() {
+
+		List<Student> slist = new ArrayList<Student>();
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("How many add Stdent");
+		int n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
+
+			Student ss = new Student();
+
+			System.out.println("Enter Your Student Id");
+			ss.setId(sc.nextInt());
+
+			System.out.println("Enter Your Student Name:-");
+			ss.setName(sc.next());
+
+			System.out.println("Enter Your Student Address:-");
+			ss.setAddress(sc.next());
+
+			System.out.println("Enter your Student City :-");
+			ss.setCity(sc.next());
+			slist.add(ss);
+		}
+		return slist;
+	}
+
+}

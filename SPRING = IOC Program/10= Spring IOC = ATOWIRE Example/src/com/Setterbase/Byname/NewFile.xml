@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+			
+			<bean id="e" class="com.Setterbase.Byname.Employee" autowire="byName">
+			<property name="eid" value="11"></property>
+			<property name="ename" value="Mauli"></property>
+			<property name="address" value="pune"></property>		
+			</bean>	
+			
+			<bean id="compaeny" class="com.Setterbase.Byname.Compaeny">
+			<property name="cid" value="22"></property>
+			<property name="cname" value="Willpro"></property>		
+			</bean>	
+			
+			<bean id="compaeny1" class="com.Setterbase.Byname.Compaeny">
+			<property name="cid" value="23"></property>
+			<property name="cname" value="Tcs"></property>
+			<property name="address" value="Hinjewadi"></property>
+			</bean>	
+			</beans>

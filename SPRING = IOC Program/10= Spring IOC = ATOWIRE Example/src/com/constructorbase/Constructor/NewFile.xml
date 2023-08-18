@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="c" class="com.constructorbase.Constructor.Car"
+		autowire="constructor">
+		<constructor-arg value="101" index="0"></constructor-arg>
+		<constructor-arg value="Duster"></constructor-arg>
+	</bean>
+
+	<bean id="e" class="com.constructorbase.Constructor.CarEngine">
+		<constructor-arg value="100"></constructor-arg>
+		<constructor-arg value="tata"></constructor-arg>
+
+	</bean>
+</beans>
+	

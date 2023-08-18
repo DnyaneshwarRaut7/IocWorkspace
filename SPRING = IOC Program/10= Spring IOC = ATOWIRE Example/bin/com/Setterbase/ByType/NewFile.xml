@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans> 
+			
+			<bean id="s" class="com.Setterbase.ByType.Student" autowire="byType">
+			<property name="sid" value="11"></property>
+			<property name="sname" value="Mauli"></property>
+			<property name="address" value="pune"></property>			
+			</bean>
+			
+			<bean id="c" class="com.Setterbase.ByType.Cource">
+			<property name="cid" value="22"></property>
+			  <property name="cname" value="java"></property>
+			
+			</bean>
+			</beans>

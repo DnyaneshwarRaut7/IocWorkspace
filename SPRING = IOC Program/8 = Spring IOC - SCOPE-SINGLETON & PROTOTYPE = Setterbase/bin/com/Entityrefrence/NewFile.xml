@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+			
+			<bean name="e" class="com.Entityrefrence.Employee" scope="singleton">
+			<property name="id" value="11"></property>
+			<property name="ename" value="Mauli"></property>
+			<property name="address" value="pune"></property>
+			<property name="compaeny" ref="c"></property>
+			<lookup-method name="getCompaeny"/>	
+			</bean>
+			
+			<bean name="c" class="com.Entityrefrence.Compaeny" scope="prototype">
+			<property name="cid" value="22"></property>
+			<property name="cname" value="tcs"></property>
+			<property name="address" value="Hinjevadi"></property>
+			
+			
+			</bean>
+			
+			</beans>

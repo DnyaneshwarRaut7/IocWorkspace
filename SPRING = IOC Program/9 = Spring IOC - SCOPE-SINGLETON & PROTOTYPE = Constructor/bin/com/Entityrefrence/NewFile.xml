@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			
+			<bean id="e" class="com.Entityrefrence.Employee" scope="singleton">
+			<constructor-arg value="123"></constructor-arg>
+			<constructor-arg value="mauli"></constructor-arg>
+		    <constructor-arg value="pune"></constructor-arg>
+			<constructor-arg ref="c"></constructor-arg>
+			<lookup-method name ="getCompaeny"/>
+			
+			</bean>
+			<bean id="c" class="com.Entityrefrence.Compaeny" scope="prototype">
+			<constructor-arg value="456"></constructor-arg>
+			<constructor-arg value="tcs"></constructor-arg>
+			<constructor-arg value="hinjvadi"></constructor-arg>
+			</bean>
+			</beans>

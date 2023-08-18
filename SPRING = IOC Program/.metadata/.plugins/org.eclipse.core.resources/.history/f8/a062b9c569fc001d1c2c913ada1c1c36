@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+
+	<bean id="p" class="com.collectionbase.Product">
+		<property name="id" value="11"></property>
+		<property name="pname">
+			<list>
+				<value>Mobile</value>
+				<value>Watch</value>
+				<value>Bottle</value>
+			</list>
+		</property>
+
+		<property name="electronic">
+			<set>
+				<value>Cable</value>
+				<value>Board</value>
+				<value>Charger</value>
+			</set>
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="12" value="Dnyaneshwar"></entry>
+				<entry key="13" value="Suraj"></entry>
+				<entry key="14" value="Rushi"></entry>
+			</map>
+		</property>
+
+
+	</bean>
+
+
+</beans>

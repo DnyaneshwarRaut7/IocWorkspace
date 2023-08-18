@@ -1,0 +1,20 @@
+package com.inheritance;
+
+public class InheritanceConfig {
+
+	public Teachar t() {
+
+		Student s = new Student();
+
+		s.setTid(1);
+		s.setTname("Nilesh");
+		s.setTaddress("Ravet");
+		s.setSid(2);
+		s.setSname("Mauli");
+		s.setSaddress("pune");
+
+		return s;
+
+	}
+
+}

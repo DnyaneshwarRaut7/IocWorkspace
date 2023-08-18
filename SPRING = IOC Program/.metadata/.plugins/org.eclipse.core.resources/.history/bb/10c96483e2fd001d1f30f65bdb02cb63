@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="e" class="com.scope.Employee" scope="singleton">
+		<property name="id" value="11"></property>
+		<property name="name" value="Suraj"></property>
+		<property name="address" value="Rajuri"></property>
+		<property name="compaeny" ref="c"></property>
+
+	</bean>
+
+	<bean id="c" class="com.scope.Compaeny" scope="singleton">
+		<property name="cid" value="12"></property>
+		<property name="cname" value="Infocis"></property>
+		<property name="caddress" value="pune"></property>
+
+	</bean>
+
+</beans>
